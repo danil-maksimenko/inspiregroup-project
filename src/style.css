@@ -4,22 +4,30 @@
   --button-text-color: #ebe5d7;
 }
 
-.calculator-image {
-  display: flex;
-}
-
 .body {
   margin: 0;
   padding: 0;
   background: var(--background-color-primary);
 }
 
-.calculator-form {
+.calculator-image {
+  display: flex;
+}
+
+.calculator-wrapper {
   padding: 40px 29px 20px 16px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.calculator-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 58px;
 }
 
 .calculator-form__h1 {
@@ -54,4 +62,22 @@
   height: 48px;
   border-radius: 100px;
   text-transform: uppercase;
+}
+
+.calulator-contacts {
+  display: flex;
+  height: 18px;
+  gap: 15px;
+  margin-bottom: 18px;
+}
+
+.calulator-contacts__num {
+  color: var(--text-color-primary);
+  font-family: Arial;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.calculator-logo {
+  mix-blend-mode: exclusion;
 }
