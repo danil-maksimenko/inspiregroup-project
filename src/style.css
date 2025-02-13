@@ -1,7 +1,10 @@
 :root {
   --background-color-primary: #ebe5d7;
   --text-color-primary: #464330;
-  --button-text-color: #ebe5d7;
+  --button-text-color: #464330;
+  --button-text-color-hover: #ebe5d7;
+  --buttom-color: #ebe5d7;
+  --buttom-color-hover: #464330;
 }
 
 .body {
@@ -15,7 +18,7 @@
 }
 
 .calculator-wrapper {
-  padding: 40px 29px 20px 16px;
+  padding: 40px 29px 19px 16px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -55,13 +58,31 @@
   justify-content: center;
   gap: 3px;
 
-  background: var(--text-color-primary);
+  background: var(--buttom-color);
   color: var(--button-text-color);
-  border: none;
+  border: 1px solid var(--button-text-color);
   width: 296px;
   height: 48px;
   border-radius: 100px;
+  font-size: 14px;
   text-transform: uppercase;
+}
+
+.calculator-form__button:hover {
+  background: var(--buttom-color-hover);
+  color: var(--button-text-color-hover);
+  border: 1px solid var(--button-text-color-hover);
+}
+
+.calculator-form__button:active {
+  background: var(--buttom-color-hover);
+  color: var(--button-text-color-hover);
+  border: 1px solid var(--button-text-color-hover);
+}
+
+.calculator-form__button-arrow {
+  width: 16px;
+  height: 16px;
 }
 
 .calulator-contacts {
@@ -80,4 +101,5 @@
 
 .calculator-logo {
   mix-blend-mode: exclusion;
+  display: flex;
 }
