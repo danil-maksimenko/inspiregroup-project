@@ -5,29 +5,277 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Onest:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <title>Inspire Group</title>
   </head>
-  <body>
-    <section class="price-calculator">
-      <img src="./src/images/calculator_background.jpg" alt="Background foto" />
+  <body class="body">
+    <svg display="none">
+      <symbol
+        id="button-arrow"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 16 16"
+      >
+        <g>
+          <path
+            d="M7.51539 13.542C7.45524 13.6057 7.40823 13.6805 7.37701 13.7623C7.3458 13.8442 7.33101 13.9313 7.33349 14.0189C7.33597 14.1064 7.35566 14.1926 7.39145 14.2725C7.42723 14.3524 7.47841 14.4245 7.54206 14.4847C7.6057 14.5448 7.68058 14.5918 7.76239 14.623C7.84421 14.6543 7.93138 14.669 8.01891 14.6666C8.10645 14.6641 8.19264 14.6444 8.27256 14.6086C8.35249 14.5728 8.42458 14.5217 8.48472 14.458L14.1514 8.45801C14.2684 8.33423 14.3336 8.17035 14.3336 8.00001C14.3336 7.82967 14.2684 7.66579 14.1514 7.54201L8.48472 1.54134C8.42498 1.4763 8.3529 1.42378 8.27268 1.38683C8.19246 1.34988 8.1057 1.32924 8.01744 1.3261C7.92918 1.32297 7.84117 1.3374 7.75853 1.36856C7.67589 1.39973 7.60027 1.447 7.53606 1.50764C7.47185 1.56827 7.42032 1.64106 7.38448 1.72178C7.34863 1.8025 7.32918 1.88953 7.32726 1.97783C7.32534 2.06613 7.34098 2.15393 7.37327 2.23613C7.40557 2.31833 7.45388 2.3933 7.51539 2.45667L12.7501 8.00001L7.51539 13.542Z"
+            fill="currentColor"
+          />
+        </g>
+      </symbol>
+    </svg>
 
-      <h2 class="price-calculator__main-text">Калькулятор стоимости дизайна</h2>
+    <!-- <section class="calculator">
+      <img
+        src="/src/images/calculator_bg.png"
+        alt="calculator background"
+        class="calculator-image"
+      />
+      <div class="calculator-wrapper">
+        <form action="#" class="calculator-form">
+          <h1 class="calculator-form__h1">Калькулятор стоимости дизайна</h1>
+          <p class="calculator-form__text">
+            Пройдите тест и получите стоимость вашего проекта.
+            <br />
+            Расчет производиться бесплатно, занимает 1 минуту и не к чему вас не
+            обязывает.
+          </p>
+          <button class="calculator-form__button">
+            пройти тест
+            <svg class="calculator-form__button-arrow">
+              <use xlink:href="#button-arrow"></use>
+            </svg>
+          </button>
+        </form>
+        <div class="calulator-contacts">
+          <a href="tel: +74994993231" class="calulator-contacts__num"
+            >+7 (499) 499-32-31</a
+          >
+          <img
+            src="/src/images/icon_telegram.svg"
+            alt="telegram"
+            class="calulator-contacts__icon"
+          />
+          <img
+            src="/src/images/icon_whatsapp.svg"
+            alt="whatsapp"
+            class="calulator-contacts__icon"
+          />
+        </div>
+        <img
+          src="/src/images/logo_calculator.png"
+          alt="logo"
+          class="calculator-logo"
+        />
+      </div>
+    </section> -->
 
-      <p class="price-calculator__description">
-        Пройдите тест и получите стоимость вашего проекта.
-        <br />
-        Расчет производиться бесплатно, занимает 1 минуту и не к чему вас не
-        обязывает.
-      </p>
+    <!-- <section class="choose-project">
+      <h2 class="choose-project__h2">Вам необходим проект</h2>
+      <form action="#" class="choose-project__form">
+        <label class="choose-project__label">
+          <input type="radio" name="project" class="choose-project__item" />
+          <div class="choose-project__item-custom"></div>
+          <span class="choose-project__item-text"> Дизайн заведения </span>
+        </label>
 
-      <form action="">
-        <button>пройти тест</button>
+        <label class="choose-project__label">
+          <input type="radio" name="project" class="choose-project__item" />
+          <div class="choose-project__item-custom"></div>
+          <span class="choose-project__item-text">
+            Разработка технологического проекта кухни и бара
+          </span>
+        </label>
+
+        <label class="choose-project__label">
+          <input type="radio" name="project" class="choose-project__item" />
+          <div class="choose-project__item-custom"></div>
+          <span class="choose-project__item-text">
+            Строительные и ремонтные работы
+          </span>
+        </label>
+
+        <label class="choose-project__label">
+          <input type="radio" name="project" class="choose-project__item" />
+          <div class="choose-project__item-custom"></div>
+          <span class="choose-project__item-text">
+            Разработка фирменного стиля
+          </span>
+        </label>
+
+        <label class="choose-project__label">
+          <input type="radio" name="project" class="choose-project__item" />
+          <div class="choose-project__item-custom"></div>
+          <span class="choose-project__item-text">
+            Технологическое оснащение объекта
+          </span>
+        </label>
+
+        <label class="choose-project__label">
+          <input type="radio" name="project" class="choose-project__item" />
+          <div class="choose-project__item-custom"></div>
+          <span class="choose-project__item-text">
+            Разработка сайта заведения
+          </span>
+        </label>
       </form>
+    </section> -->
+
+    <!-- <section class="choose-project">
+      <h2 class="choose-project__h2">
+        выберите формат вашего будущего заведения
+      </h2>
+      <form action="#" class="choose-project__form">
+        <label class="choose-project__label">
+          <input type="radio" name="project" class="choose-project__item" />
+          <div class="choose-project__item-custom"></div>
+          <span class="choose-project__item-text">Кафе, кофейня</span>
+        </label>
+
+        <label class="choose-project__label">
+          <input type="radio" name="project" class="choose-project__item" />
+          <div class="choose-project__item-custom"></div>
+          <span class="choose-project__item-text">Клуб</span>
+        </label>
+
+        <label class="choose-project__label">
+          <input type="radio" name="project" class="choose-project__item" />
+          <div class="choose-project__item-custom"></div>
+          <span class="choose-project__item-text">Ресторан</span>
+        </label>
+
+        <label class="choose-project__label">
+          <input type="radio" name="project" class="choose-project__item" />
+          <div class="choose-project__item-custom"></div>
+          <span class="choose-project__item-text">Караоке</span>
+        </label>
+
+        <label class="choose-project__label">
+          <input type="radio" name="project" class="choose-project__item" />
+          <div class="choose-project__item-custom"></div>
+          <span class="choose-project__item-text">Бар, паб</span>
+        </label>
+
+        <label class="choose-project__label">
+          <input type="radio" name="project" class="choose-project__item" />
+          <div class="choose-project__item-custom"></div>
+          <span class="choose-project__item-text">Магазин</span>
+        </label>
+
+        <label class="choose-project__label">
+          <input type="radio" name="project" class="choose-project__item" />
+          <div class="choose-project__item-custom"></div>
+          <span class="choose-project__item-text">Фаст-фуд</span>
+        </label>
+
+        <label class="choose-project__label">
+          <input type="radio" name="project" class="choose-project__item" />
+          <div class="choose-project__item-custom"></div>
+          <span class="choose-project__item-text">Другое...</span>
+        </label>
+      </form>
+    </section> -->
+
+    <!-- <section class="choose-project">
+      <h2 class="choose-project__h2">Площадь вашего объекта</h2>
+      <form action="#" class="choose-project__form">
+        <label class="choose-project__label">
+          <input type="radio" name="project" class="choose-project__item" />
+          <div class="choose-project__item-custom"></div>
+          <span class="choose-project__item-text">до 60 м.кв.</span>
+        </label>
+
+        <label class="choose-project__label">
+          <input type="radio" name="project" class="choose-project__item" />
+          <div class="choose-project__item-custom"></div>
+          <span class="choose-project__item-text">61-68 м.кв.</span>
+        </label>
+
+        <label class="choose-project__label">
+          <input type="radio" name="project" class="choose-project__item" />
+          <div class="choose-project__item-custom"></div>
+          <span class="choose-project__item-text">81-100 м.кв.</span>
+        </label>
+
+        <label class="choose-project__label">
+          <input type="radio" name="project" class="choose-project__item" />
+          <div class="choose-project__item-custom"></div>
+          <span class="choose-project__item-text">101-140 м.кв.</span>
+        </label>
+
+        <label class="choose-project__label">
+          <input type="radio" name="project" class="choose-project__item" />
+          <div class="choose-project__item-custom"></div>
+          <span class="choose-project__item-text">141-200 м.кв.</span>
+        </label>
+
+        <label class="choose-project__label">
+          <input type="radio" name="project" class="choose-project__item" />
+          <div class="choose-project__item-custom"></div>
+          <span class="choose-project__item-text">201-500 м.кв.</span>
+        </label>
+
+        <label class="choose-project__label">
+          <input type="radio" name="project" class="choose-project__item" />
+          <div class="choose-project__item-custom"></div>
+          <span class="choose-project__item-text">351-700 м.кв.</span>
+        </label>
+
+        <label class="choose-project__label">
+          <input type="radio" name="project" class="choose-project__item" />
+          <div class="choose-project__item-custom"></div>
+          <span class="choose-project__item-text">701-1500 м.кв..</span>
+        </label>
+
+        <label class="choose-project__label">
+          <input type="radio" name="project" class="choose-project__item" />
+          <div class="choose-project__item-custom"></div>
+          <span class="choose-project__item-text">более 1000 м.кв..</span>
+        </label>
+      </form>
+    </section> -->
+
+    <section class="slider">
+      <h2 class="slider__h2">в каком стиле вы хотите проект?</h2>
+      <div class="slider__items">
+        <div class="slider__item">
+          <img
+            src="src/images/classic.png"
+            alt="Современная классика"
+            class="slider__image"
+          />
+          <p class="slider__text">Современная классика</p>
+        </div>
+
+        <div class="slider__item">
+          <img
+            src="src/images/minimalism.png"
+            alt="Минимализм"
+            class="slider__image"
+          />
+          <p class="slider__text">Минимализм</p>
+        </div>
+
+        <div class="slider__item">
+          <img src="src/images/loft.png" alt="Лофт" class="slider__image" />
+          <p class="slider__text">Лофт</p>
+        </div>
+
+        <div class="slider__item">
+          <img
+            src="src/images/art-deco.png"
+            alt="Арт-деко"
+            class="slider__image"
+          />
+          <p class="slider__text">Арт-декор</p>
+        </div>
+      </div>
     </section>
 
-    <!-- <main>
-      <section class="about-us"></section>
-    </main> -->
     <div id="app"></div>
     <script type="module" src="/src/main.ts"></script>
   </body>
